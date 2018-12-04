@@ -1,0 +1,55 @@
+{ "name": "HOMA",
+  "children": [
+  { "name": "Edad (HOMA ≤ 1.76)",
+    "children": [
+    { "name": "Normal (Edad ≤ 33)"},
+    { "name": "HOMA (Edad > 33)",
+      "children": [
+      { "name": "Normal (HOMA ≤ 0.81)"},
+      { "name": "Insulina (HOMA > 0.81)",
+        "children": [
+        { "name": "HOMA (Insulina ≤ 6.92)",
+          "children": [
+          { "name": "Actividad Física (HOMA ≤ 1.63)",
+            "children" : [
+            { "name" : "Insulina (Act.Física = Si)",
+              "children" : [
+              { "name" : "Historia Familiar (Insulina ≤ 6.57)",
+                "children" : [
+                { "name" : "HOMA (HFamiliar = No)",
+                  "children" : [
+                  { "name" : "Normal (HOMA ≤ 1.22)"},
+                  { "name" : "Insulina (HOMA > 1.22)",
+                    "children" : [
+                    { "name" : "Prediabetes (Insulina ≤ 5.71)"},
+                    { "name" : "Homa (Insulina > 5.71)",
+                      "children" : [
+                      { "name" : "Normal (HOMA ≤ 1.42)"},
+                      { "name" : "Prediabetes (HOMA > 1.42)"}
+                      ]
+                    }
+                    ]
+                  }
+                  ]
+                },
+                { "name" : "Prediabetes (HFamiliar = Si)" }
+                ]
+              },
+              { "name" : "Normal (Insulina > 6.57)"},
+              ]
+            },
+            { "name" : "Normal (Act.Física = No)"},
+            ]
+          },         
+          { "name" : "Prediabetes (HOMA > 1.63)"}
+          ]
+        },
+        { "name": "Normal (Insulina >6.92)"}
+        ]
+      }
+      ]
+    }
+    ]
+  }
+]
+}
