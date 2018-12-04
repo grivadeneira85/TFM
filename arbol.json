@@ -1,127 +1,13 @@
-{ "name": "HOMA",
-  "children": [
-  { "name": "Edad (HOMA ≤ 1.76)",
+{
+    "name": "Top Level gIThUB2",
     "children": [
-    { "name": "Normal (Edad ≤ 33)"},
-    { "name": "HOMA (Edad > 33)",
-      "children": [
-      { "name": "Normal (HOMA ≤ 0.81)"},
-      { "name": "Insulina (HOMA > 0.81)",
+      { 
+		"name": "Level 2: A",
         "children": [
-        { "name": "HOMA (Insulina ≤ 6.92)",
-          "children": [
-          { "name": "Actividad Física (HOMA ≤ 1.63)",
-            "children" : [
-            { "name" : "Insulina (Act.Física = Si)",
-              "children" : [
-              { "name" : "Historia Familiar (Insulina ≤ 6.57)",
-                "children" : [
-                { "name" : "HOMA (HFamiliar = No)",
-                  "children" : [
-                  { "name" : "Normal (HOMA ≤ 1.22)"},
-                  { "name" : "Insulina (HOMA > 1.22)",
-                    "children" : [
-                    { "name" : "Prediabetes (Insulina ≤ 5.71)"},
-                    { "name" : "Homa (Insulina > 5.71)",
-                      "children" : [
-                      { "name" : "Normal (HOMA ≤ 1.42)"},
-                      { "name" : "Prediabetes (HOMA > 1.42)"}
-                      ]
-                    }
-                    ]
-                  }
-                  ]
-                },
-                { "name" : "Prediabetes (HFamiliar = Si)" }
-                ]
-              },
-              { "name" : "Normal (Insulina > 6.57)"},
-              ]
-            },
-            { "name" : "Normal (Act.Física = No)"},
-            ]
-          },         
-          { "name" : "Prediabetes (HOMA > 1.63)"}
-          ]
-        },
-        { "name": "Normal (Insulina >6.92)"}
+          { "name": "Son of A" },
+          { "name": "Daughter of A" }
         ]
-      }
-      ]
-    }
+      },
+      { "name": "Level 2: B" }
     ]
-  },
-  { "name": "Edad (HOMA>1.76)",
-    "children" : [
-    { "name" : "Insulina (Edad ≤ 43)",
-      "children" : [
-      { "name" : "Prediabetes (Insulina ≤ 7.78)"},
-      { "name" : "HOMA (Insulina > 7.78)",
-        "children" :[
-        { "name" : "Género (HOMA ≤ 2.88)",
-          "children" : [
-          { "name" : "Normal (Género Femenino)"},
-          { "name" : "HOMA (Género Masculino)",
-            "children" :[
-            { "name" : "Normal (HOMA ≤ 2.04)"},
-            { "name" : "Insulina (HOMA > 2.04)",
-              "children": [
-              { "name" : "Prediabetes (Insulina ≤ 9.51)" },
-              { "name" : "HOMA (Insulina > 9.51)",
-                "children" : [
-                { "name" : "Normal (HOMA ≤ 2.39)"},
-                { "name" : "Insulina (HOMA > 2.39)",
-                  "children" : [
-                  { "name" : "Prediabetes (Insulina ≤ 10.46)"},
-                  { "name" : "HOMA (Insulina > 10.46)",
-                    "children" : [
-                    { "name" : "Normal (HOMA ≤ 2.58)"},
-                    { "name" : "Insulina (HOMA > 2.58)",
-                      "children" : [
-                      { "name" : "Prediabetes (Insulina ≤ 11.12)"},
-                      { "name" : "Triglicéridos (Insulina >11.12)",
-                        "children" : [
-                        { "name" : "Normal (Triglicéridos ≤ 124)"},
-                        { "name" : "Prediabetes (Triglicéridos > 124)"}
-                        ]
-                      }
-                      ]
-                    }
-                        
-                    ]
-                  }
-                  ]
-                }
-                ]
-              }
-              ]
-            }
-            ]
-          }
-          ]
-        },
-        { "name" : "Insulina (HOMA > 2.88)",
-          "children" : [
-          { "name" : "Prediabetes (Insulina ≤ 12.86)"},
-          { "name" : "Edad (Insulina > 12.86)",
-            "children" : [
-            { "name" : "HOMA (Edad ≤ 29)",
-              "children" : [
-              { "name" : "Normal (HOMA ≤ 4.59)"},
-              { "name" : "Prediabetes (HOMA > 4.59)"}
-              ]
-            },
-            { "name" : "Prediabetes (Edad > 29)"}
-            ]
-          }
-          ]
-        }
-        ] 
-      }
-      ]
-    },
-    { "name" : "Prediabetes (Edad > 43)"}
-   ]
- }
-    ]
-}
+  }
